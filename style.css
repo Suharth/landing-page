@@ -1,18 +1,26 @@
 body{
+    height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-}
-
-.top{
-    display: flex;
-    flex-direction: column;
-    background-color: #1f2937;
-    padding: 8px 200px 100px 200px;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
+    background-color: #1f2937;
+    padding: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.section1{
+    background-color: #1f2937;
+    padding: 10px;
 }
 
 .header-logo{
@@ -25,12 +33,121 @@ body{
     gap: 18px;
 }
 
+.header-links,.hero-secondary-text{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .section1{
     display: flex;
+    justify-content: space-between;
+}
+
+.hero-main-text{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+}
+
+button{
+    background-color: #3882f6;
+    margin-top: 8px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section2-header{
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
+}
+
+.section2-images{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.section2-image{
+    text-align: center;
+}
+
+.section3{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quotee{
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.section4{
+    padding: 10px 80px;
+    display: flex;
+}
+
+.section4-content{
+    background-color: #3882f6;
+    display: flex;
+    gap: 60px;
+    color: #f9faf8;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: #1f2937;
+    text-align: center;
+    color: #f9faf8;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 a{
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
+}
+
+button{
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+    color: #f9faf8;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section1 button{
+    border-style: none;
+}
+
+.section2 img{
+    border-radius: 10px;
+    border-color: #3882f6;
+    border-style: solid;
+}
+
+.section1,.section2,.section3,.section4{
+    flex-grow: 1;
 }
